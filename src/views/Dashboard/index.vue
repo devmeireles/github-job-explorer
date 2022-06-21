@@ -21,7 +21,12 @@ export default {
 
 <style scoped>
 .sidebar {
-    background-color: #facada;
-    min-width: 20%;
+    background-color: #13131a;
+    min-width: 16%;
+    padding: 0% 1%;
+}
+
+.container {
+    padding: 0% 2%;
 }
 </style>

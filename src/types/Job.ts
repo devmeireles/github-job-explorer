@@ -15,4 +15,5 @@ export interface IJob {
 export interface IJobState {
     items: IJob[],
     loading: boolean
+    labels: string[]
 }

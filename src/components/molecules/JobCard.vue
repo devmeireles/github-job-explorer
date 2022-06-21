@@ -31,16 +31,17 @@ export default {
 
 <style scoped>
 .job-card {
+    background-color: #1c1c24;
+    color: #B0A5A6;
+    width: 23%;
+    border-radius: 10px;
+    text-align: left;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #1c1c24;
-    color: #B0A5A6;
-    width: 20%;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    text-align: left;
 }
 
 .title {
