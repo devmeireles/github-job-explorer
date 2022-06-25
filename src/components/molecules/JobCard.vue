@@ -9,7 +9,7 @@
         </div>
 
         <div class="actions">
-            <Button content="Details" blue/>
+            <Button content="Details" blue />
             <Button content="Save" gray />
         </div>
     </div>
@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .job-card {
     background-color: #1c1c24;
     color: #B0A5A6;
@@ -42,30 +42,32 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
 
-.title {
-    font-weight: bold;
-    color: #FFF;
-    margin: 20px 0px;
-}
+    .title {
+        font-weight: bold;
+        color: #FFF;
+        margin: 20px 0px;
 
-.description p {
-    word-break: break-word;
-}
+        .description {
+            p {
+                word-break: break-word;
+            }
+        }
+    }
 
-.stack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 25px 0px;
-}
+    .stack {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 25px 0px;
+    }
 
-.actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 </style>

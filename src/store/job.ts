@@ -22,11 +22,6 @@ const useJobStore = defineStore('job', {
         if (requestBack.status === 200) {
           const { data } = requestBack;
           this.items = data;
-
-          const labelsArr: any[] = [];
-          data.every((item: { labels: any; }, index: any) => labelsArr.push(...item.labels));
-
-          this.labels = labelsArr;
         }
 
         const requestFront = await axios.get('https://api.github.com/repos/frontendbr/vagas/issues');
@@ -34,6 +29,12 @@ const useJobStore = defineStore('job', {
           const { data } = requestFront;
           this.items.push(...data);
         }
+
+        const labelsArr: any[] = [];
+        this.items.every((item: { labels: any; }, index: any) => labelsArr.push(...item.labels));
+
+        this.labels = labelsArr;
+        this.loading = false;
       } catch (error) {
         console.log(error);
       } finally {

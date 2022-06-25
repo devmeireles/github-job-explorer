@@ -22,33 +22,33 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .job-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
 
-.header {
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 1%;
-}
+  .header {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1%;
 
-.sort {
-  font-size: 15px;
-}
+    .sort {
+      font-size: 15px;
+    }
+  }
 
-.body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  .body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 </style>

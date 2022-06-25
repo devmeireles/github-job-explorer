@@ -1,6 +1,8 @@
 <template>
   <div class="jobs">
-    <JobList :items="items" />
+    <JobList v-if="items" :items="items" />
+    {{loading}}
+    <Loading v-if="!!loading" />
   </div>
 </template>
 
@@ -10,6 +12,7 @@ import { storeToRefs } from 'pinia';
 import useJobStore from '@/store/job';
 
 import JobList from '@/components/organisms/JobList.vue';
+import Loading from '@/components/organisms/Loading.vue';
 
 export default {
   setup() {
@@ -24,7 +27,7 @@ export default {
       loading,
     };
   },
-  components: { JobList },
+  components: { JobList, Loading },
 };
 </script>
 

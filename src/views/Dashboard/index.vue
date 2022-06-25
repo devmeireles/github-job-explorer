@@ -28,5 +28,7 @@ export default {
 
 .container {
     padding: 0% 2%;
+    width: 100%;
+    min-height: 100vh;
 }
 </style>
